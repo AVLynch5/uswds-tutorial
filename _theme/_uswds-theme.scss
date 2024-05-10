@@ -7,9 +7,18 @@ in the form $setting: value,
 ----------------------------------------
 */
 
-//
-//  @use "uswds-core" with (
-//    $setting: value,
-//    $setting: value
-//  );
-//
+// p8 - add custom uswds settings
+@use "uswds-core" with (
+  // disable compile messages
+  $theme-show-notifications: false,
+  // use public sans font
+  $theme-font-type-sans: "public-sans",
+  // add font weight
+  $theme-font-weight-heavy: 900,
+  // customize banner
+  $theme-banner-background-color: "ink",
+  $theme-banner-link-color: "indigo-30",
+  $theme-banner-max-width: none,
+  // customize identifier
+  $theme-identifier-max-width: none,
+);
